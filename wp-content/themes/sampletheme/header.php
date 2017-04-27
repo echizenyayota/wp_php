@@ -18,7 +18,11 @@
 			<div class="site-branding">
 				<div class="wrap">
 					<div class="site-branding-text">
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<p class="site-title">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+								<img src="<?php echo esc_url( get_theme_file_uri( '/images/top.png' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+							</a>
+						</p>
 						<?php $description = get_bloginfo( 'description', 'display' );
 						if ( $description ) : ?>
 							<p class="site-description"><?php bloginfo( 'description'); ?></p>
