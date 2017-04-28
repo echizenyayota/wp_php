@@ -23,7 +23,7 @@
 			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+	<?php get_sidebar( 'single' ); ?>
 </div><!-- .wrap -->
 
 <?php get_footer();
