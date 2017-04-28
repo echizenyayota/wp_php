@@ -9,9 +9,14 @@
 		}
 		?>
 	</header><!-- .entry-header -->
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div><!-- .post-thumbnail -->
+	<?php if (has_post_thumbnail()) : ?>
+		<div class="post-thumbnail">
+			<?php
+				$title_attribute = the_title_attribute('echo=0');
+				the_post_thumbnail('post-thumbnail', array('alt' => $title_attribute) );
+			?>
+		</div><!-- .post-thumbnail -->
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php
