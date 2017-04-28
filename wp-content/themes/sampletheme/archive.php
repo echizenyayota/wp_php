@@ -9,7 +9,14 @@
 
 			<?php
 			if ( have_posts() ) :
+				$post_count = 0;
 				while ( have_posts() ) : the_post();
+				$post_count++;
+				if ($post_count <= 1) {
+					$more = 1;
+				} else {
+					$more = 0;
+				}
 					get_template_part( 'content' );
 				endwhile;
 
