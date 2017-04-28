@@ -43,7 +43,8 @@
 						<?php wp_nav_menu( array(
 							'theme_location'  => 'top',
 							'container_class' => 'menu-container',
-							'menu_id'         => 'top-menu'
+							'menu_id'         => 'top-menu',
+							'link_before' => '>'
 						) ); ?>
 					</nav><!-- #site-navigation -->
 				</div><!-- .wrap -->
